@@ -14,18 +14,13 @@ return (<div>
 const DaftarBarang = () => {
    return(
      <div>
-        <table border={2}>
-            <thead>
-                <tbody>Sabun cuci</tbody>
-                <tbody>Pasta gigi</tbody>
-                <tbody>Sikat gigi</tbody>
-            </thead>
-            <tr>
-                <tbody>Pocari sweat</tbody>
-                <tbody>Air mineral</tbody>
-                <tbody>Larutan</tbody>
-            </tr>
-        </table>
+         <h3>Daftar Barang</h3> 
+<ul>
+    <li>Sabun</li>
+    <li>Sikat gigi</li>
+    <li>Sikat kamar mandi</li>
+    <li>Handuk</li>
+</ul> 
     </div>
    )
 }
