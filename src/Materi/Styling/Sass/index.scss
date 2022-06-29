@@ -1,0 +1,15 @@
+$info: rgb(0, 119, 255);
+
+.btn{
+    border: 2px solid firebrick;
+    background-color: white;
+    padding: 14px 28px;
+    font-size: 17px;
+
+    &.btn:hover{
+        background-color: $info;
+        border: 2px solid aliceblue;
+        color: white;
+        transform: translateY(10px);
+    }
+}
