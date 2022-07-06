@@ -1,11 +1,25 @@
 import React from "react";
+import { Navbar, Container, Nav } from "react-bootstrap";
+
 import './StylingPortfolio.css'; 
 
 export default class Portfolio extends React.Component {
 
     render() {
         return(
-            <body>
+        <body>
+        <div>
+        <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Dandan Ismail</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home"></Nav.Link>
+            <Nav.Link href="#features">Features</Nav.Link>
+            <Nav.Link href="#pricing">Pricing</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+        </div>
         <div>
             <div className="jumbotron">
            <h2>Hello guys !! <br /> 

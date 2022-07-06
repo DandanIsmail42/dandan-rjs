@@ -1,5 +1,6 @@
 const FunctionaComponent = () => {
 return (<div>
+    <h1>Hello {}</h1>
    <h3>Daftar menu</h3> 
 <ul>
     <li>Bakso</li>
