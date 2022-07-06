@@ -37,10 +37,10 @@ export default class FormRegistrasi extends React.Component{
     }  if(password.length < 8) {
         message = [...message, 'password minimal 8 karakter harus mengandung angka dan huruf'];
     }  
-    const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    if(!re.test(String(email).toLowerCase())) {
-        message = [...message, 'Email tidak valid'];
-    }
+    // const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    // if(!re.test(String(email).toLowerCase())) {
+    //     message = [...message, 'Email tidak valid'];
+    // }
 
     if(message.length > 0) {
         this.setState({
