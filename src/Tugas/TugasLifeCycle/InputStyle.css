@@ -1,0 +1,7 @@
+.InpuTan{
+    width: 900px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 25% auto 25%;
+    grid-template-rows: 3000px 100px auto;
+}
