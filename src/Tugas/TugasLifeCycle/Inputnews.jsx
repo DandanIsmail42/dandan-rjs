@@ -30,8 +30,6 @@ export default class InputNews extends React.Component{
     
         return(
     <div>
-      
-
       <div>
       {this.state.users.map((user, idx) => {
         return(
