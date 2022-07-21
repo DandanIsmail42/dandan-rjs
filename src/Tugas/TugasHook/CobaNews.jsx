@@ -9,7 +9,7 @@ const CobaNews = () => {
     
     const getApi = async () => {
         try{
-            let resp = await axios.get(`https://newsapi.org/v2/everything?q=${idn}&apiKey=74f0cb22ba5245b493bd7b8ed4e8b130`)
+            let resp = await axios.get(`https://newsapi.org/v2/everything?q=${idn}&apiKey=0e57b96a91774c25b707c31a0b64342b`)
             setUsed(resp.data.articles);
         } catch (e) {
             console.log(e.messange);
@@ -17,8 +17,9 @@ const CobaNews = () => {
     }
     
     useEffect(() => {
-        getApi();
-    }, [idn])
+            getApi();
+
+    })
 
     return(
         <div>

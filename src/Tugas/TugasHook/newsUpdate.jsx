@@ -12,7 +12,7 @@ const NewssUpdate = () => {
    
     const getUsers = async () => {
         try{
-            let response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=74f0cb22ba5245b493bd7b8ed4e8b130')
+            let response = await axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=0e57b96a91774c25b707c31a0b64342b')
             setGetapi(response.data.articles)
         } catch(e) {
             console.log(e.message);
@@ -21,7 +21,7 @@ const NewssUpdate = () => {
 
     useEffect(() => {
         getUsers();
-    }, [])
+    })
 
     return(
     <div>
