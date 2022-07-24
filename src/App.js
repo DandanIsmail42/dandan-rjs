@@ -3,6 +3,8 @@
 // import InputNews from "./Tugas/TugasLifeCycle/Inputnews";
 // import NavbarLc from "./Tugas/TugasLifeCycle/NavbarLc";
 
+// import CobaAja from "./Materi/komponen/pembahasan/Hook/cobacoba/CobaAja";
+
 
 
 
@@ -15,7 +17,7 @@ import TugasHook from "./Tugas/TugasHook";
 function App() {
   return (
     <div className="App">
-     
+     {/* <CobaAja /> */}
       <TugasHook />
    
     </div>

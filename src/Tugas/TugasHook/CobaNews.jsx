@@ -1,25 +1,28 @@
+
 import axios from "axios";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Button, Card, Col, Container, Form, InputGroup, Row } from "react-bootstrap";
 
 const CobaNews = () => {
-    const [idn, setIdn] = useState('')
-    const [used, setUsed] = useState([])
+    const [idn, setIdn] = useState('');
+    const [used, setUsed] = useState([]);
     
-    const getApi = async () => {
-        try{
-            let resp = await axios.get(`https://newsapi.org/v2/everything?q=${idn}&apiKey=0e57b96a91774c25b707c31a0b64342b`)
+
+    const newLocal = async () => {
+
+        try {
+            let resp = await axios.get(`https://newsapi.org/v2/everything?q=${idn}&apiKey=0e57b96a91774c25b707c31a0b64342b`);
             setUsed(resp.data.articles);
         } catch (e) {
             console.log(e.messange);
         }
-    }
-    
-    useEffect(() => {
-            getApi();
+    };
+const getApi = newLocal
 
-    })
+    useEffect(() => {
+        getApi();
+        }, [getApi, idn])
 
     return(
         <div>

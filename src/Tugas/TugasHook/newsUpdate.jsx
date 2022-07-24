@@ -21,7 +21,7 @@ const NewssUpdate = () => {
 
     useEffect(() => {
         getUsers();
-    })
+    }, [])
 
     return(
     <div>

@@ -1,7 +1,7 @@
 
 import CobaNews from "./CobaNews";
 import NavbarDan from "./Navbar";
-import NewssUpdate from "./newsUpdate"
+import NewssUpdate from "./newsUpdate";
 
 const TugasHook = () => {
     return(
