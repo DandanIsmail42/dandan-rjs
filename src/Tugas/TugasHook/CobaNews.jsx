@@ -18,7 +18,7 @@ const CobaNews = () => {
             console.log(e.messange);
         }
     };
-const getApi = newLocal
+    const getApi = newLocal
 
     useEffect(() => {
         getApi();
@@ -38,7 +38,6 @@ const getApi = newLocal
             
             </InputGroup>
             </Form>
-            
             <Container className="fluid">
                 <Row>
                     {
